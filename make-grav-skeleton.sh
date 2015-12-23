@@ -18,6 +18,7 @@ git clone $repo user
 rm -rf user/.git
 
 bin/gpm install $theme
+bin/grav clearcache
 
 cd ..
 zip "$dir" -r $dir
