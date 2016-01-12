@@ -4,6 +4,9 @@ dir="gravstrap-skeleton"
 repo="git@github.com:giansi/gravstrap-theme-skeleton.git"
 theme="gravstrap-theme"
 
+rm -rf $dir
+composer create-project getgrav/grav $dir
+
 if [ ! -d $dir ]; then
   echo $dir" does not exist"
   exit
